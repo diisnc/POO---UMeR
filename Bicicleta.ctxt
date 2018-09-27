@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Bicicleta()
+comment1.params=b
+comment1.target=Bicicleta(Bicicleta)
+comment2.params=mat\ velMedia\ precoKm\ reliability\ x\ y\ available
+comment2.target=Bicicleta(java.lang.String,\ double,\ double,\ double,\ double,\ double,\ boolean)
+comment3.params=
+comment3.target=double\ getPrecoKm()
+comment4.params=
+comment4.target=Bicicleta\ clone()
+numComments=5

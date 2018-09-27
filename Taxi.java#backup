@@ -1,0 +1,32 @@
+import java.util.*;
+/**
+ * Write a description of class Taxi here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Taxi extends Viatura
+{
+    //variaveis de intância
+    /** Fila de espera que corresponde à lista de requisições de um determinado taxi **/
+    private ArrayList<Cliente> queue;
+    
+    //construtores
+    public Taxi(){
+        super();
+        this.queue = new ArrayList<Cliente>();
+    }
+    
+    //gets
+    
+    //sets
+    
+    //metodos
+    public void add_queue(Cliente c){
+        this.queue.add(c);
+    }
+    
+    public Cliente rem_queue(){
+        return this.queue.remove(0);
+    }
+}

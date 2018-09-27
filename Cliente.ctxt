@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Cliente()
+comment1.params=email\ nome\ passw\ morada\ dataN\ x\ y
+comment1.target=Cliente(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ double)
+comment10.params=
+comment10.target=Cliente\ clone()
+comment10.text=\r\n\ \ \ \ \r\n\ \ \ \ //escolher\ taxi\ espec\u00EDfico,\ vai\ receber\ uma\ classe\ taxi\ q\ marco\ vai\ fzr\r\n\ \ \ \ //a\ nossa\ matricula\ \u00E9\ como\ se\ fosse\ um\ id\ especifico\ de\ uma\ viatura\r\n\ \ \ \ //retorna\ o\ identificador\ do\ veiculo\r\n\ \ \ \ public\ Viatura\ pedirTaxiEspec(String\ matricula,\ ArrayList<Viatura>\ veic){\r\n\ \ \ \ \ \ \ \ Iterator<Viatura>\ it\ \=\ veic.iterator();\r\n\ \ \ \ \ \ \ \ Viatura\ v\ \=\ null;\r\n\ \ \ \ \ \ \ \ String\ matric;\r\n\ \ \ \ \ \ \ \ boolean\ encontrou\ \=\ false;\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ while(\ it.hasNext()\ &&\ \!encontrou){\r\n\ \ \ \ \ \ \ \ \ \ \ \ v\ \=\ it.next();\r\n\ \ \ \ \ \ \ \ \ \ \ \ matric\ \=\ v.getMatricula();\r\n\ \ \ \ \ \ \ \ \ \ \ \ if(\ matric.equals(matricula)\ ){//&&\ v.getMotorista().getDisponibilidade()\ ){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ encontrou\ \=\ true;\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ return\ encontrou\ ?\ v.clone()\ \:\ null;\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ //escolher\ taxi\ dispon\u00EDvel\ mais\ pr\u00F3ximo\r\n\ \ \ \ public\ Viatura\ pedirTaxiMaisProx(ArrayList<Viatura>\ veic){\r\n\ \ \ \ \ \ \ \ double\ menor_dist\ \=\ Double.MAX_VALUE;\r\n\ \ \ \ \ \ \ \ double\ dist_tmp;\r\n\ \ \ \ \ \ \ \ Viatura\ v_mais_prox\ \=\ null;\r\n\ \ \ \ \r\n\ \ \ \ \ \ \ \ for(Viatura\ v\ \:\ veic){\r\n\ \ \ \ \ \ \ \ \ \ \ \ dist_tmp\ \=\ this.localizacao.distEuc(v.getCoord());\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ if(\ dist_tmp\ <\ menor_dist){\ //&&\ v.getMotorista().getDisponibilidade()\ ){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ menor_dist\ \=\ dist_tmp;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ v_mais_prox\ \=\ v;\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ \ \ \ \ return\ v_mais_prox.clone();\r\n\ \ \ \ }\r\n
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=c
+comment2.target=Cliente(Cliente)
+comment3.params=
+comment3.target=double\ getLocalizacaoX()
+comment4.params=
+comment4.target=double\ getLocalizacaoY()
+comment5.params=
+comment5.target=Coordenadas\ getLocalizacao()
+comment6.params=xx
+comment6.target=void\ setLocalizacaoX(double)
+comment7.params=yy
+comment7.target=void\ setLocalizacaoY(double)
+comment8.params=c
+comment8.target=void\ setLocalizacao(Coordenadas)
+comment9.params=x\ y
+comment9.target=void\ setLocalizacao(double,\ double)
+comment9.text=public\ void\ setLocalizacao(double\ x,\ double\ y){\r\n\ \ \ \ \ \ \ \ this.localizacao\ \=\ new\ Coordenadas(x,y);//pode-se\ fazer\ isto?\r\n\ \ \ \ }\r\n
+numComments=12
